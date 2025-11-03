@@ -1,19 +1,26 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>It works!</title>
+    <title>This page works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; margin:0; padding:2rem; }
+      main { max-width: 720px; margin: 10vh auto; text-align: center; }
+      h1 { margin-bottom: .5rem; }
+      .ok { display:inline-block; padding:.5rem 1rem; border:1px solid #ccc; border-radius:8px; }
+      code { background:#f5f5f5; padding:.1rem .3rem; border-radius:4px; }
+    </style>
   </head>
   <body>
-    <h1>Discover the easiest, fastest and most affordable way to rent a room anywhere in the United States. At RoomRentalUSA, we believe that finding a place to live should be simple and completely free.
-
-Whether you are a student looking for a short term stay, a professional relocating for work, or someone searching for your next home, RoomRentalUSA connects you directly with verified listings and trusted hosts. No fees, no hidden costs, no stress.
-
-Why Choose RoomRentalUSA
-• 100% free to use with no listing or booking charges
-• Available nationwide with rooms in every city and state
-• Safe and reliable with verified profiles and secure communication
-• Easy to use so you can search, connect and move in within minutes 🎉</h1>
-    <p>If you can see this, hosting is working.</p>
+    <main>
+      <h1>✅ This page works</h1>
+      <p>If you can read this, GitHub Pages is serving your latest HTML.</p>
+      <p class="ok">Last updated: <span id="ts"></span></p>
+      <p>Try forcing refresh (Ctrl+F5 / Cmd+Shift+R) or add <code>?v=2</code> to the URL when testing.</p>
+    </main>
+    <script>
+      document.getElementById('ts').textContent = new Date().toLocaleString();
+    </script>
   </body>
 </html>
