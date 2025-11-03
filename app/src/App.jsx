@@ -1,5 +1,4 @@
-# App.tsx
-cat > src/App.tsx <<'EOF'
+cat > src/App.jsx <<'EOF'
 export default function App() {
   return (
     <div data-theme="lofi" className="min-h-screen p-6">
@@ -23,25 +22,4 @@ export default function App() {
     </div>
   );
 }
-EOF
-
-# index.css with Tailwind directives
-cat > src/index.css <<'EOF'
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-EOF
-
-# main.tsx (standard Vite + React entry)
-cat > src/main.tsx <<'EOF'
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
 EOF
